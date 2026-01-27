@@ -1,0 +1,20 @@
+docker ps --all //ดูcontainerทั้งหมด
+docker run busybox ping ... // คือ ดูว่าปลายทางยังทำงานอยู่มั้ย
+docker stop CONTAINER ID สั่งหยุดcontainer id ที่ทำงาน
+docker create busybox ping google.com //CONTAINERล่าสุด status create
+docker start CONTAINER ID 
+docker rm CONTAINER ID //remove
+docker system prune //ต้องระวังระบบใหญ่ๆ
+
+docker run nginx
+
+docker exec CONTAINER ID ls
+
+docker exec -it CONTAINER ID sh
+docker exec -it CONTAINER ID bash //ออกจากcontainer
+
+docker run -p 80:80 nginx 
+
+//สามารถลบ + หยุด ทั้งหมดได้
+docker stop id (all)
+docker rm id (all)
